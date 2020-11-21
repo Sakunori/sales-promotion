@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+.heder{
+  background-color: aquamarine;
+  height: 70px;
+  padding-top: 20px;
+  padding-left: 60px;
+  font-size: large;
+}
+
+.main-area{
+  height: 400px;
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+
+  &__home{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    // height: 30%;
+    // width: 30%;
+    line-height: 100px;
+    text-align: center;
+    width:200px;
+    height:100px;
+    background:#81C7D4;
+    -moz-border-radius: 100px / 50px;	/* 高さ÷2 */
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 100px / 50px;
+    font-size: large;
+  }
+  &__member{
+    // height: 400px;
+    // width: 150px;
+    margin-top: 30px;
+    &__up{
+      display: flex;
+      height: 200px;
+      margin: 0 auto;
+      &__first{
+        // text-align: left;
+        line-height: 200px;
+        padding: 0 auto;
+        height: 100%;
+        width: 50%;
+        background-color: cadetblue;
+        font-size: xx-large;
+      }
+      &__second{
+        text-align: right;
+        line-height: 200px;
+        height: 100%;
+        width: 50%;
+        background-color: goldenrod;
+        font-size: xx-large;
+      }
+    }
+    &__down{
+      display: flex;
+      height: 200px;
+      margin: 0 auto;
+      &__first{
+        text-align: left;
+        line-height: 200px;
+        height: 100%;
+        width: 50%;
+        background-color: tomato;
+        font-size: xx-large;
+      }
+      &__second{
+        text-align: right;
+        line-height: 200px;
+        height: 100%;
+        width: 50%;
+        background-color: mediumpurple;
+        font-size: xx-large;
+      }
+    }
+  }
+}
