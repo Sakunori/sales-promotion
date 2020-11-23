@@ -1,21 +1,39 @@
 * {
   box-sizing: border-box;
 }
+.wrapper{
+  background-color: ivory;
+}
 
 .heder{
   background-color: aquamarine;
-  height: 70px;
+  color: snow;
   padding-top: 20px;
   padding-left: 60px;
-  font-size: large;
+  font-size: xx-large;
+  font-style: italic;
+  // text-decoration: underline;
+  background-image: image-url('Night.png');
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+
 }
 
-.main-area{
+.title-skil{
+  font-size: x-large;
+  font-style: italic;
+  // text-align: center;
+  color: black;
+  margin-top: 30px;
+  padding-left: 70px;
+}
+
+.skil-area{
   height: 400px;
   width: 80vw;
   margin: 0 auto;
   position: relative;
-
   &__home{
     position: absolute;
     top: 50%;
@@ -36,7 +54,8 @@
   &__member{
     // height: 400px;
     // width: 150px;
-    margin-top: 30px;
+    margin-top: 20px;
+    
     &__up{
       display: flex;
       height: 200px;
@@ -47,16 +66,23 @@
         padding: 0 auto;
         height: 100%;
         width: 50%;
+        background-image: image-url('mac.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
         background-color: cadetblue;
-        font-size: xx-large;
       }
       &__second{
         text-align: right;
         line-height: 200px;
         height: 100%;
         width: 50%;
+        background-image: image-url('speak.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+        // background-image: image-url('woman-and-robot.jpg');
         background-color: goldenrod;
-        font-size: xx-large;
       }
     }
     &__down{
@@ -68,17 +94,74 @@
         line-height: 200px;
         height: 100%;
         width: 50%;
+        background-image: image-url('snow-drink.png');
+        background-size: cover;
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // background-position: top center;
         background-color: tomato;
-        font-size: xx-large;
       }
       &__second{
         text-align: right;
         line-height: 200px;
         height: 100%;
         width: 50%;
+        background-image: image-url('mac.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
         background-color: mediumpurple;
-        font-size: xx-large;
       }
     }
   }
+  .member-name{
+    text-decoration: none;
+    text-align: right;
+    color: black;
+    font-size: xx-large;
+  }
+  .member-pictuer{
+    height: 100%;
+    width: 80%;
+  }
+
+  .home-name{
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+  }
+
+}
+
+.status-area{
+  background-color: black;
+  height: 500px;
+  // width: 80vw;
+  margin-top: 40px;
+  padding: 0 auto;
+  &__title{
+    font-size: x-large;
+    font-style: italic;
+    // text-align: center;
+    color: snow;
+    padding-top: 30px;
+    padding-left: 70px;
+  }
+  &__intro{
+    margin: 10px auto;
+    width: 80vw;
+    display: flex;
+    &__img{
+      // height: 300px;
+      // width: 100px;
+    }
+    &__comment{
+      width: 50%;
+      color: snow;
+    }
+  }
+}
+.intro-img{
+  height: 400px;
+  width: 300px;
 }
