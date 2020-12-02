@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper{
+  background-color: ivory;
+}
+
+.title{
+  height: 150px;
+  padding-top: 30px;
+  text-align: center;
+  font-size: xx-large;
+  color: darkcyan;
+  text-decoration: underline darkcyan;
+  // border-bottom: solid 2px darkcyan
+}
+
+.form-area{
+  height: 500px;
+}

@@ -5,6 +5,7 @@
   background-color: ivory;
 }
 
+// トップヘッダー
 .heder{
   background-color: aquamarine;
   color: snow;
@@ -15,11 +16,12 @@
   // text-decoration: underline;
   background-image: image-url('Night.png');
   background-size: cover;
-  height: 300px;
+  height: 500px;
   width: 100%;
 
 }
 
+// スキルエリア
 .title-skil{
   font-size: x-large;
   font-style: italic;
@@ -127,12 +129,13 @@
 
   .home-name{
     text-decoration: none;
-    font-size: x-large;
+    font-size: large;
     color: black;
   }
 
 }
 
+// ステータスエリア
 .status-area{
   background-color: black;
   height: 500px;
@@ -164,4 +167,46 @@
 .intro-img{
   height: 400px;
   width: 300px;
+}
+
+//ボトムフッター
+.bottom-footer{
+  background: black;
+  font-size: small;
+  color: snow;
+  font-style: italic;
+  text-align: left;
+  padding-left: 20px;
+}
+
+//相談ボタン or 依頼ボタン
+.display_btn {
+  height: 130px;
+  width:130px;
+  background-color: #3CCACE;
+  z-index: 3;
+  box-sizing: border-box;
+  display: block;
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  flex-direction: column; 
+  justify-content: center;     
+  align-items: center; 
+  border-radius: 10px;
+  &__in_box{
+    padding: 15px 15px 10px 15px;
+    text-align: center;
+    &__text{
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+}
+.new_list {
+  height: 65px;
+  width: 65px;
+  color:#fff;
+  margin-left:30px;
+  text-decoration: none;
 }
