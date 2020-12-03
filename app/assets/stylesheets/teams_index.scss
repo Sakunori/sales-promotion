@@ -181,7 +181,7 @@
 
 //相談ボタン or 依頼ボタン
 .display_btn {
-  height: 130px;
+  height: 70px;
   width:130px;
   background-color: #3CCACE;
   z-index: 3;
@@ -195,7 +195,7 @@
   align-items: center; 
   border-radius: 10px;
   &__in_box{
-    padding: 15px 15px 10px 15px;
+    // padding: 15px 15px 15px 15px;
     text-align: center;
     &__text{
       font-size: 18px;

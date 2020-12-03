@@ -1,6 +1,7 @@
 .display_btn 
-  .display_btn__in_box
-    .display_btn__in_box__text
-      = link_to "相談する", contacts_index_path, class:'new_list'
-  -# = link_to new_item_path do
-  -#   = image_tag 'icon_camera.png', class:'new_list'
+  = link_to contacts_index_path, class:'new_list' do
+    .display_btn__in_box
+      .display_btn__in_box__text
+        = "相談する"
+    -# = link_to new_item_path do
+    -#   = image_tag 'icon_camera.png', class:'new_list'
