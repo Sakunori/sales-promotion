@@ -7,7 +7,7 @@
 
 // トップヘッダー
 .heder{
-  background-color: aquamarine;
+  // background-color: aquamarine;
   color: snow;
   padding-top: 20px;
   padding-left: 60px;
@@ -18,11 +18,10 @@
   background-size: cover;
   height: 500px;
   width: 100%;
-
 }
 
 // スキルエリア
-.title-skil{
+.title-skill{
   font-size: x-large;
   font-style: italic;
   // text-align: center;
@@ -31,7 +30,7 @@
   padding-left: 70px;
 }
 
-.skil-area{
+.skill-area{
   height: 400px;
   width: 80vw;
   margin: 0 auto;
