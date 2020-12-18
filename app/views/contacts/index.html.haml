@@ -1,0 +1,32 @@
+.wrapper
+  = render "teams/top_header"
+
+  .title
+    -# .title__word
+    Contact
+  .form-area
+    = form_with model: @contacts, url: contacts_index_path, local: true do |f|
+      .form-area__nickname
+        = f.label "ニックネーム", class: 'category'
+        = f.label "必須", class: 'required'
+        = f.text_field :nickname, class: 'text_field', placeholder: '全角入力'
+      .form-area__email
+        = f.label "メールアドレス", class: 'category'
+        = f.label "必須", class: 'required'
+        = f.email_field :email, class: 'text_field', placeholder: 'E-mail'
+      .form-area__category
+        = f.label "相談の種類", class: 'category'
+        = f.label "必須", class: 'required'
+        = f.select :category_id, [ ["仕事の相談",1], ["遊びのお誘い", 2], ["その他", 3 ]], prompt: "内容を選択してください", class: 'hoge'
+        = f.text_area :ditail, maxlength: 1000, placeholder: '全角入力', class: 'text_area'
+
+        -# = f.text_field :nickname, class: 'text_field', placeholder: '全角入力'
+      -# .form-area__ditail
+      -#   = f.label "相談内容", class: 'category'
+      -#   = f.label "※", class: 'required'
+        -# = f.text_area :ditail, maxlength: 1000, placeholder: '全角入力', class: 'text_area'
+      .Button
+        = f.submit "送信する", class: "Button__submit"
+
+  .futer
+    = render "teams/bottom_footer"

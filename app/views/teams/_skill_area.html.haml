@@ -1,0 +1,21 @@
+.title-skill
+  Menu.
+.skill-area
+  .skill-area__home
+    = link_to 'ポートフォリオ', portfolios_index_path, class: 'home-name'
+  .skill-area__member
+    .skill-area__member__up
+      .skill-area__member__up__first
+        = link_to 'HTML/CSS', "#", class: 'member-name'
+        -# = image_tag 'mac.jpg', class: 'member-pictuer'
+      .skill-area__member__up__second
+        = link_to 'Ruby on Rails', "#", class: 'member-name'
+        -# = image_tag 'woman-and-robot.jpg', class: 'member-pictuer'
+    .skill-area__member__down
+      .skill-area__member__down__first
+        = link_to 'Javascript', "#", class: 'member-name'
+        -# = image_tag 'berry.png', class: 'member-pictuer'
+      .skill-area__member__down__second
+        = link_to 'データベース設計', "#", class: 'member-name'
+        -# = image_tag 'person-to-analyze.jpg', class: 'member-pictuer'
+

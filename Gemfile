@@ -60,3 +60,23 @@ gem 'font-awesome-sass'
 gem 'devise'
 
 gem 'pry-rails'
+
+gem 'carrierwave'
+
+gem 'mini_magick'
+
+gem 'active_hash'
+
+gem 'payjp'
+
+gem 'awesome_print'
+
+gem 'gretel'
+
+gem 'jquery-rails'
+
+gem 'ancestry'
+
+gem 'fog-aws'
+
+gem 'dotenv-rails'
