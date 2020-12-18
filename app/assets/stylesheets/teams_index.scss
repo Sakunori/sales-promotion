@@ -8,16 +8,26 @@
 // トップヘッダー
 .heder{
   // background-color: aquamarine;
-  color: snow;
-  padding-top: 20px;
-  padding-left: 60px;
-  font-size: xx-large;
-  font-style: italic;
+  // color: snow;
+  // padding-top: 20px;
+  // padding-left: 60px;
+  // font-size: xx-large;
+  // font-style: italic;
+  // text-decoration: none;
   // text-decoration: underline;
   background-image: image-url('Night.png');
   background-size: cover;
   height: 500px;
   width: 100%;
+  &__logo{
+    display: block;
+    color: snow;
+    padding-top: 50px;
+    padding-left: 60px;
+    font-size: xx-large;
+    font-style: italic;
+    text-decoration: none;
+  }
 }
 
 // スキルエリア
