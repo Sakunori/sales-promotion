@@ -1,0 +1,27 @@
+.wrapper
+  = render "teams/top_header"
+
+  .title
+    -# .title__word
+    Contact
+  .form-area
+    = form_with model: @client, url: contacts_create_path, local: true do |f|
+      .form-area__nickname
+        = f.label "ニックネーム", class: 'category'
+        = f.label "必須", class: 'required'
+        = f.text_field :nickname, class: 'text_field', placeholder: '全角入力'
+      .form-area__email
+        = f.label "メールアドレス", class: 'category'
+        = f.label "必須", class: 'required'
+        = f.email_field :email, class: 'text_field', placeholder: 'E-mail'
+      = f.fields_for :contacts do |contact|  # 別のモデルのフォームはfield_forメソッドを使う
+        .form-area__category
+          = contact.label "相談の種類", class: 'category'
+          = contact.label "必須", class: 'required'
+          = contact.collection_select :category_id, Category.all, :id, :status, {prompt: "選択してください"}, {class: "category_form", id: "category_id"}
+          = contact.text_area :message, maxlength: 1000, placeholder: '全角入力', class: 'text_area'
+      .Button
+        = f.submit "送信する", class: "Button__submit"
+
+  .futer
+    = render "teams/bottom_footer"
