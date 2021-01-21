@@ -52,3 +52,6 @@ production:
   database: sales_promotion_production
   username: sales_promotion
   password: <%= ENV['SALES_PROMOTION_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
